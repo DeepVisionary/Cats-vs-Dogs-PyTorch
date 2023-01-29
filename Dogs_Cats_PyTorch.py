@@ -255,9 +255,9 @@ def predict_custom_img(PATH):
     print(img1.shape)
     prediction = model(img1)
     if prediction < 0.5:
-        a = str(f'This is a cat {prediction}')
+        a = str(f'This is a cat with a score: {prediction}')
     else:
-        a = str(f'This is a dog {prediction}')
+        a = str(f'This is a dog with a score: {prediction}')
     plt.imshow(img)
     plt.title(a)
     return img1
@@ -332,8 +332,7 @@ plt.tight_layout()
 plt.show()
 
 
-# In[ ]:
-
+# In[ ]
 
 
 
